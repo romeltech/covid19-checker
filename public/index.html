@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+
+  <!-- Primary Meta Tags -->
+  <title>COVID19 Checker - MEL</title>
+  <meta name="title" content="COVID19 Checker - MEL">
+  <meta name="description"
+    content="COVID-19 Checker gathers the latest information on Coronavirus (COVID-19). Checks the latest information on your country and displays it in a modern way.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://covid19checker.live/">
+  <meta property="og:title" content="COVID19 Checker - MEL">
+  <meta property="og:description"
+    content="COVID-19 Checker gathers the latest information on Coronavirus (COVID-19). Checks the latest information on your country and displays it in a modern way.">
+  <meta property="og:image" content="https://mel-7.com/wp-content/uploads/2020/04/fb-thumbnail.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://covid19checker.live/">
+  <meta property="twitter:title" content="COVID19 Checker - MEL">
+  <meta property="twitter:description"
+    content="COVID-19 Checker gathers the latest information on Coronavirus (COVID-19). Checks the latest information on your country and displays it in a modern way.">
+  <meta property="twitter:image" content="https://mel-7.com/wp-content/uploads/2020/04/twitter-thumbnail.jpg">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120360609-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120360609-4');
+  </script>
+
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
