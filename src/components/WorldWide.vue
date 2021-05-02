@@ -13,10 +13,9 @@
               single-line
               hide-details
               class="mb-5"
-              dense
             ></v-text-field>
           </v-card-title>
-          <v-data-table dense :headers="headers" :items="countries" :search="search">
+          <v-data-table :headers="headers" :items="countries" :search="search">
             <template
               v-slot:item.current="{ item }"
             >{{ item.TotalConfirmed - item.TotalRecovered - item.TotalDeaths }}</template>

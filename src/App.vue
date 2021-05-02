@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app color class="elevation-3" style="background-color:#ffffff;">
       <div class="d-flex align-center">
-        <v-btn :to="'/'" text small class="mr-3">COVID19 CHECKER</v-btn>
+        <v-btn :to="'/'" text small class="mr-3">COVID CASE CHECKER</v-btn>
         <v-btn
           :href="'https://www.who.int/emergencies/diseases/novel-coronavirus-2019'"
           target="_blank"
@@ -31,11 +31,12 @@
       <router-view style="min-height:80vh;"></router-view>
       <div class="d-flex justify-center align-center mt-6 mb-6">
         <span class="mr-2 overline">created by:</span>
-        <a href="https://mel-7.com" target="_blank">
+        <a href="https://romel.tech" target="_blank">
           <v-img
             max-width="50px"
-            src="https://mel-7.com/wp-content/uploads/2019/03/romel-indemne.svg"
+            src="@/assets/romel-indemne.svg"
           ></v-img>
+          <!-- https://mel-7.com/wp-content/uploads/2019/03/romel-indemne.svg -->
         </a>
       </div>
     </v-content>
@@ -46,7 +47,8 @@ import { mapGetters, mapActions } from "vuex";
 export default {
   name: "App",
   data: () => ({
-    date: ""
+    date: "",
+    baseUrl: window.location.origin
   }),
   methods: {
     ...mapActions(["fetchGlobal"])
